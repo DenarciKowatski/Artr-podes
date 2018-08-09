@@ -1,0 +1,217 @@
+/* reset*/
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	border: none;
+	outline: none;
+	font-weight: 300;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+
+}
+a{text-decoration: none; color: black;}
+ul{list-style: none;}
+img{max-width: 100%;}
+
+.col-12{width: 100%;}
+
+.radius{border-radius: 7px;}
+.gradiente-1{background: linear-gradient(to right, #228B22, #ADFF2F);}
+.gradiente-2{background: linear-gradient(to top, #008000, #fff);}
+.gradiente-3{background: linear-gradient(to top, #800080, #fff);}
+.gradiente-4{background: linear-gradient(to top, #20B2AA, #fff);}
+.gradiente-5{background: linear-gradient(to top, #FF8C00, #fff);}
+.gradiente-6{background: linear-gradient(to top, #006000, #54CD32);}
+.gradiente-7{background: linear-gradient(to top, #800080, #9932CC);}
+.gradiente-8{background: linear-gradient(to top, #008B8B, #00CED1);}
+.gradiente-9{background: linear-gradient(to top, #FF4500, #FF8C00);}
+
+.bck-1{background: url(img/back-1.jpg) 50% no-repeat fixed;}
+.bck-2{background: url(img/back-2.jpg) 50% no-repeat fixed;}
+.bck-3{background: url(img/back-3.jpg) 50% no-repeat fixed;}
+.bck-4{background: url(img/back-4.jpg) 50% no-repeat fixed;}
+
+.blue-1{background-color: #20B2AA;}
+.blue-2{background-color: #00CED1;}
+.blue-3{background-color: #008B8B;}
+
+.green-1{background-color: #006400;}
+.green-2{background-color: #008000;}
+.green-3{background-color: #32CD32;}
+
+.orange-1{background-color: #FF4500;}
+.orange-2{background-color: #FF8C00;}
+.orange-3{background-color: #FFA500;}
+
+.purple-1{background-color: #4B0082;}
+.purple-2{background-color: #800080;}
+.purple-3{background-color: #9932CC;}
+
+/* Cabeçalho */
+.padrao{
+	float: left;
+	padding: 3% 4%;
+	text-align: center;
+}
+
+.title{
+	margin: 0;	
+}
+.tam{
+	width: 56px;
+	height: 56px;
+}
+.logo{
+	float: left;
+	background: url(img/logo-mobile.jpg) center center/56px no-repeat;
+}
+.btn-menu{
+	float: right;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+}
+/*Menu*/
+.menu{
+	display: none;
+	position: fixed;
+	background: rgba(0,0,0,0.9);
+	top: 0;
+	left: 0;
+}
+
+.btn-close{
+	font-size: 3em;
+	color: #fff;
+	float: right;
+	cursor: pointer; 
+	margin-right: 5%;
+}
+.menu li{ 
+	padding: 1.5%;
+}
+.menu li a{
+	font-size: 2em;
+	color: #fff;
+	padding: 1.5% 3%;
+}
+.menu li a:hover{
+	border:1px solid #333;
+}
+/*partes*/
+
+.caixa{ 
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	padding: 3%;
+}
+.img1{
+	width: 80%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+.ptr{
+	width: 100%;
+	background-color: #fff;
+	text-align: left;	
+	margin-bottom: 3%;
+}
+.ptr img{
+	border-radius: 7px 7px 0 0;
+	width: 100%;
+ 	height: 100%;
+}
+.inner{
+	padding: 7%;
+	height: 300px;
+}
+.inner a{font-size: 1.5em;}
+.inner p { margin-top: 6%; }
+/* roda pe*/
+.social{
+	color: white;
+	font-size: 1.5em; 
+}
+.social a{
+	font-size: 1.5em;
+	color: rgba(255, 200, 255, 0.7);	
+}
+.social a:hover{color: rgb(255, 255, 255);}
+.social:nth-child(2){margin-top: 2%;}/* isso especifica o segundo elemento da classe mae*/
+ 
+@media screen and (min-width: 480px){
+	.tam{
+		width: 100px;
+		height: 100px;
+	}
+	.logo{ 
+		width: 40%;
+		background: url(img/logo.jpg) center center/40% no-repeat;}
+	.img1{
+		width: 50%;
+		float: left;
+	}
+	.inner{
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.ptr{
+		width: 47%;
+		float: left;
+		margin-right: 3%;
+	}
+	.ptr:nth-child(2){margin-right: 0;}
+	.inner a{font-size: 2.5em;}
+	.caixa{height: 100%;}
+	.img1{width: 30%;}
+	.inner{height: 410px;}
+}
+
+@media screen and (min-width: 1080px){
+	.ptr{
+		width: 24%;
+		margin-right: 1%;
+	}
+	.ptr:nth-child(2){margin-right: 1%;}
+	.inner{
+		font-size: 1em;
+		height: 440px;
+	}
+
+}
+
+
+
+/*
+
+
+
+
+.itens {
+	background-color:#448922; 
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.itens > li {
+  padding: 20px;
+  text-align: center;
+  border: solid 1px black;
+}
+
+.itens::after {
+  clear:both;
+  content: "";
+  display: block;
+}
+
+.cx1{
+	background-color: #77ff56;
+}
+
+*/
